@@ -20,7 +20,7 @@ public class Customer {
 		if (option.equalsIgnoreCase("NO")) {
 			customerDetails();
 			createUserid();
-			// login();
+			
 		}
 
 	}
