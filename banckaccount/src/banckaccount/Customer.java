@@ -10,7 +10,7 @@ public class Customer {
 	private String userId;
 	private String password;
 
-	public void confirmation() {
+	public void register() {
 		System.out.println("***IF YOU HAVE AN ACCOUNT THEN ENTER YES ELSE ENTER NO***");
 		String option = sc.next();
 

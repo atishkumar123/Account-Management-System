@@ -9,7 +9,7 @@ public class main {
 		Customer puja = new Customer();
 		Customer rajendra = new Customer();
 
-		rupa.confirmation();
+		rupa.register();
 		rupa.userlogin();
 
 	}
