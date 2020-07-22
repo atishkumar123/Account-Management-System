@@ -15,25 +15,24 @@ public class Customer {
 		String option = sc.next();
 
 		if (option.equalsIgnoreCase("YES")) {
-            userlogin();
+			userlogin();
 		}
 		if (option.equalsIgnoreCase("NO")) {
 			customerDetails();
 			createUserid();
-			
 		}
 
 	}
 
 	private void customerDetails() {
-		System.out.println("***for creating a new account please enter some details***");
-		System.out.println("enter your name:-");
+		System.out.println("***For creating a new account please enter some details***");
+		System.out.println("Enter your name:-");
 		String name = sc.next();
 
-		System.out.println("enter your mobileno:-");
+		System.out.println("Enter your mobileno:-");
 		String mobileNo = sc.next();
 
-		System.out.println("enter your email Id :-");
+		System.out.println("Enter your email Id :-");
 		String emailId = sc.next();
 		this.name = name;
 		this.mobileNo = mobileNo;
@@ -44,10 +43,10 @@ public class Customer {
 	private void createUserid() {
 		System.out.println("***Now create a userId with password***");
 
-		System.out.println("enter userid:- ");
+		System.out.println("Enter userid:- ");
 		String userId = sc.next();
 
-		System.out.println("enter password:-");
+		System.out.println("Enter password:-");
 		String password = sc.next();
 
 		this.userId = userId;
@@ -59,17 +58,12 @@ public class Customer {
 		int t = 0;
 		do {
 
-			System.out.println("enter your usserId:-");
+			System.out.println("Enter your usserId");
 			String L_userId = sc.next();
 
-			System.out.println("enter your password:-");
+			System.out.println("Enter your password");
 			String L_password = sc.next();
 
-			/*
-			 * if (this.userId.equals(L_userId) && this.password.equals(L_password)) {
-			 * System.out.println("HI\n" + name); } else {
-			 * System.out.println("INVALID USERID & PASSWORD"); }
-			 */
 
 			if (this.userId.equals(L_userId) && this.password.equals(L_password)) {
 				System.out.println("HI\n" + name);
@@ -77,7 +71,7 @@ public class Customer {
 				System.out.println("--INVALID USERID & PASSWORD--");
 			}
 
-		} while (++t < 3);
+		} while (++t< 3);
 
 		System.out.println("***Sorry, you have exceeded the maximum logon attempts***");
 	}
